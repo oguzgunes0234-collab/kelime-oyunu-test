@@ -1,6 +1,6 @@
 // Otomatik üretildi — elle düzenleme.
-const CACHE = 'kelime-oyunu-muzhv2yu';
-const ASSETS = ["./","./assets/ana-sayfa-acik-C1JZkjeC.webp","./assets/bulmaca-acik-DWBhDzCf.webp","./assets/ana-sayfa-koyu-BAgz0-rG.webp","./assets/bulmaca-koyu-_xUlz7XY.webp","./assets/index-BVg8J5kt.css","./assets/index-CVvBHlcb.js","./icon-192.png","./icon-512-maskable.png","./icon-512.png","./icon.svg","./manifest.webmanifest"];
+const CACHE = 'kelime-oyunu-muzig53q';
+const ASSETS = ["./","./assets/bulmaca-koyu-_xUlz7XY.webp","./assets/ana-sayfa-koyu-BAgz0-rG.webp","./assets/index-SjWpRARB.css","./assets/index-BA2KJBsm.js","./icon-192.png","./icon-512-maskable.png","./icon-512.png","./icon.svg","./manifest.webmanifest"];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));
