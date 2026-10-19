@@ -1,6 +1,6 @@
 // Otomatik üretildi — elle düzenleme.
-const CACHE = 'kelime-oyunu-mvfr9lo2';
-const ASSETS = ["./","./assets/bulmaca-koyu-_xUlz7XY.webp","./assets/ana-sayfa-koyu-BAgz0-rG.webp","./assets/index-DVoshNSc.css","./assets/index-z1n88i-A.js","./icon-192.png","./icon-512-maskable.png","./icon-512.png","./icon.svg","./manifest.webmanifest","./yasal/gizlilik.html","./yasal/kosullar.html","./yasal/kvkk.html","./yasal/privacy.html","./yasal/terms.html","./yasal/yasal.css"];
+const CACHE = 'kelime-oyunu-mvfrifrz';
+const ASSETS = ["./","./assets/ana-sayfa-koyu-BAgz0-rG.webp","./assets/bulmaca-koyu-_xUlz7XY.webp","./assets/index-DVoshNSc.css","./assets/index-Du25k14L.js","./icon-192.png","./icon-512-maskable.png","./icon-512.png","./icon.svg","./manifest.webmanifest","./yasal/gizlilik.html","./yasal/kosullar.html","./yasal/kvkk.html","./yasal/privacy.html","./yasal/terms.html","./yasal/yasal.css"];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));
