@@ -28,8 +28,8 @@
 
       <h2>2. Kısaca</h2>
       <ul>
-        <li>Hesap açmanız gerekmez; ad, e-posta ya da telefon numarası istemeyiz.</li>
-        <li>Uygulamanın kendi sunucusu yoktur. Oyun ilerlemeniz yalnızca cihazınızda saklanır ve bize gönderilmez.</li>
+        <li>Hesap açmanız gerekmez. İsterseniz Google hesabınızla giriş yapabilirsiniz (Bölüm 4, “Hesap”).</li>
+        <li>Giriş yapmazsanız oyun ilerlemeniz yalnızca cihazınızda saklanır ve bize gönderilmez.</li>
         <li>Uygulamada analiz (istatistik) aracı yoktur.</li>
         <li>
           Reklam ve uygulama içi satın alma özellikleri etkinleştirildiğinde ilgili üçüncü taraflar aşağıda (Bölüm 4) yazan verileri
@@ -54,6 +54,29 @@
       </p>
 
       <h2>4. Üçüncü taraflar</h2>
+      <h3>Hesap: Google ile giriş ve hesap yedeği (Google Firebase) — yalnızca giriş yaparsanız</h3>
+      <p>
+        Ayarlar → Hesap’tan Google hesabınızla giriş yapabilirsiniz. Giriş isteğe bağlıdır; oyunun bütün özellikleri girişsiz de
+        kullanılabilir. Giriş yaparsanız şu bilgiler Google’ın Firebase hizmetinde saklanır:
+      </p>
+      <ul>
+        <li>Hesap bilgileri (Firebase Authentication): Google hesabınızın adı, e-posta adresi, profil fotoğrafının adresi, size
+          verilen kullanıcı kimliği, hesabın oluşturulma ve son giriş zamanı;</li>
+        <li>Oyun yedeği (Cloud Firestore): Bölüm 3’teki oyun ilerlemesi (jetonlar dahil), yedeğin alındığı cihaz için rastgele
+          üretilmiş bir cihaz kimliği ve yedek zamanı.</li>
+      </ul>
+      <p>
+        Amaç yalnızca ilerlemenizi hesabınıza yedeklemek ve başka bir cihazda (iPhone ya da web) aynı hesapla girdiğinizde geri
+        getirmektir. Bu bilgiler reklam ya da başka bir amaçla kullanılmaz, kimseyle paylaşılmaz. Oyun yedekleri Google’ın
+        Avrupa’daki sunucularında tutulur; giriş hizmeti Google’ın küresel altyapısında (ABD dahil) çalışır. Yedeklere yalnızca
+        kendi hesabınızla erişilebilir.
+      </p>
+      <p>
+        <strong>Çıkış yap</strong> bu cihazdaki oturumu kapatır; hesabınız ve yedekleriniz durur. <strong>Hesabı sil</strong>
+        (Ayarlar → Hesap) hesabınızı ve hesaptaki bütün yedekleri hemen siler; cihazınızdaki ilerleme yerinde kalır. Google’ın
+        yedekleme sistemlerindeki kopyalar Google’ın kendi süreleriyle silinir. Ayrıntı:
+        <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase gizlilik ve güvenlik</a>.
+      </p>
       <h3>Apple (App Store ve uygulama içi satın alma)</h3>
       <p>
         Uygulamayı indirmeniz ve uygulama içi satın almalar Apple tarafından yürütülür. Ödeme bilgilerinizi biz görmeyiz; cihaza
@@ -90,8 +113,8 @@
 
       <h2>6. Haklarınız</h2>
       <p>
-        Bize ait bir sunucuda sizinle ilgili kayıt tutmadığımız için silinecek ya da size verilecek bir hesap bilgisi yoktur.
-        Sorularınız ve talepleriniz için <span class="ph">[E-POSTA]</span> adresine yazabilirsiniz. Türkiye’deki haklarınız için
+        Giriş yapmadıysanız sizinle ilgili hiçbir kayıt tutmayız. Giriş yaptıysanız hesabınızı ve yedeklerinizi uygulamada
+        Ayarlar → Hesap → “Hesabı sil” ile istediğiniz an silebilirsiniz. Sorularınız ve talepleriniz için <span class="ph">[E-POSTA]</span> adresine yazabilirsiniz. Türkiye’deki haklarınız için
         <a href="./kvkk.html">KVKK Aydınlatma Metni</a>’ne bakınız.
       </p>
 

@@ -24,8 +24,8 @@
 
       <h2>2. In short</h2>
       <ul>
-        <li>No account is needed; we do not ask for your name, email or phone number.</li>
-        <li>The app has no server of its own. Your progress is stored only on your device and is never sent to us.</li>
+        <li>No account is needed. If you wish, you can sign in with your Google account (section 4, “Account”).</li>
+        <li>If you do not sign in, your progress is stored only on your device and is never sent to us.</li>
         <li>The app contains no analytics.</li>
         <li>When advertising and in-app purchases are enabled, the third parties listed in Section 4 may process data.</li>
       </ul>
@@ -41,6 +41,29 @@
       </p>
 
       <h2>4. Third parties</h2>
+      <h3>Account: Google sign-in and account backup (Google Firebase) — only if you sign in</h3>
+      <p>
+        You can sign in with your Google account in Settings → Account. Signing in is optional; every feature of the game works
+        without it. If you sign in, the following is stored in Google’s Firebase service:
+      </p>
+      <ul>
+        <li>Account data (Firebase Authentication): your Google account name, email address, profile photo address, the user ID
+          assigned to you, account creation and last sign-in times;</li>
+        <li>Game backup (Cloud Firestore): the game progress listed in section 3 (including coins), a randomly generated ID for the
+          device that made the backup, and the backup time.</li>
+      </ul>
+      <p>
+        This is used only to back up your progress to your account and restore it when you sign in with the same account on another
+        device (iPhone or web). It is not used for advertising or any other purpose and is not shared with anyone. Game backups are
+        stored on Google’s servers in Europe; the sign-in service runs on Google’s global infrastructure (including the US). Backups
+        can be accessed only with your own account.
+      </p>
+      <p>
+        <strong>Sign out</strong> ends the session on this device; your account and backups remain. <strong>Delete account</strong>
+        (Settings → Account) immediately deletes your account and all backups in it; the progress on your device stays. Copies in
+        Google’s backup systems are deleted on Google’s own schedule. Details:
+        <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy and security</a>.
+      </p>
       <h3>Apple (App Store and in-app purchases)</h3>
       <p>
         Downloads and in-app purchases are handled by Apple. We never see your payment details; the device only receives
@@ -75,7 +98,8 @@
 
       <h2>6. Your rights</h2>
       <p>
-        Because we keep no records about you on any server of ours, there is no account data to delete or export. For questions or
+        If you have not signed in, we keep no records about you. If you have, you can delete your account and backups at any time in
+        the app under Settings → Account → “Delete account”. For questions or
         requests, write to <span class="ph">[EMAIL]</span>. Users in Türkiye can also refer to the
         <a href="./kvkk.html">KVKK information notice (Turkish)</a>.
       </p>

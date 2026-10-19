@@ -26,9 +26,14 @@
 
       <h2>2. Uygulamanın kendisinin işlediği veriler</h2>
       <p>
-        Uygulama hesap açtırmaz; ad, e-posta, telefon numarası gibi kimlik bilgisi istemez. Oyun ilerlemesi, jeton bakiyesi,
-        ayarlar ve satın alma durumu yalnızca kullanıcının cihazında saklanır, veri sorumlusuna ya da bir sunucuya gönderilmez.
-        Veri sorumlusu bu bilgilere erişemez.
+        Uygulama hesap açmayı zorunlu tutmaz. Giriş yapmayan kullanıcının oyun ilerlemesi, jeton bakiyesi, ayarları ve satın alma
+        durumu yalnızca kendi cihazında saklanır, veri sorumlusuna ya da bir sunucuya gönderilmez.
+      </p>
+      <p>
+        Kullanıcı isterse Google hesabıyla giriş yapar (Ayarlar → Hesap). Bu durumda ad, e-posta adresi, profil fotoğrafı adresi,
+        kullanıcı kimliği, giriş zamanları ve oyun ilerlemesi yedeği (rastgele cihaz kimliği ve yedek zamanı dahil), ilerlemenin
+        hesaba yedeklenmesi ve başka cihazda geri getirilmesi amacıyla Google Firebase hizmetinde işlenir. Kullanıcı hesabını ve
+        yedeklerini uygulamada “Hesabı sil” ile istediği an silebilir.
       </p>
 
       <h2>3. Üçüncü taraflarca işlenebilecek veriler</h2>
@@ -42,6 +47,12 @@
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td>Google Firebase (Authentication, Cloud Firestore) — yalnızca giriş yapan kullanıcı için</td>
+            <td>Ad, e-posta adresi, profil fotoğrafı adresi, kullanıcı kimliği, giriş zamanları; oyun ilerlemesi yedeği, rastgele cihaz kimliği</td>
+            <td>Oyun ilerlemesinin kullanıcının hesabına yedeklenmesi ve başka cihazda geri getirilmesi</td>
+            <td><span class="ph">[ÖR. KVKK m.5/2-c sözleşmenin ifası / açık rıza — DOĞRULANACAK]</span></td>
+          </tr>
           <tr>
             <td>Apple (App Store, uygulama içi satın alma)</td>
             <td>Satın alma işlemi bilgileri (Apple tarafından işlenir; ödeme bilgileri veri sorumlusuna iletilmez)</td>
@@ -60,12 +71,14 @@
       <h2>4. Toplama yöntemi</h2>
       <p>
         Veriler, üçüncü taraf hizmetlerin uygulamaya eklenmiş yazılım bileşenleri aracılığıyla otomatik yollarla toplanır.
-        Uygulama kullanıcıdan form ya da benzeri yollarla kişisel veri istemez.
+        Hesap bilgileri, kullanıcı Google ile giriş yapmayı seçtiğinde Google’dan alınır. Uygulama kullanıcıdan form ya da benzeri
+        yollarla kişisel veri istemez.
       </p>
 
       <h2>5. Aktarım ve yurt dışına aktarım</h2>
       <p>
-        Bölüm 3’teki hizmet sağlayıcıların sunucuları Türkiye dışında bulunabilir. Yurt dışına aktarım, KVKK’nın 9. maddesinde
+        Bölüm 3’teki hizmet sağlayıcıların sunucuları Türkiye dışında bulunabilir (Firebase: oyun yedekleri Avrupa’da, giriş
+        hizmeti ABD dahil Google’ın küresel altyapısında). Yurt dışına aktarım, KVKK’nın 9. maddesinde
         öngörülen şartlara uygun olarak yapılır: <span class="ph">[DAYANAK: ör. standart sözleşme / açık rıza — HUKUKÇU
         DOĞRULAYACAK]</span>.
       </p>
